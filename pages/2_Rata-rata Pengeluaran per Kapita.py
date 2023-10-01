@@ -13,7 +13,7 @@ indo.columns = ['Daerah', 'Jenis', 'Tahun', 'Rata-Rata Pengeluaran']
 
 df = df[df['provinsi'] != 'INDONESIA']
 
-st.header('Rata-rata Pengeluaran per Kapita')
+st.header('Rata-Rata Pengeluaran per Kapita')
 
 # Indonesia
 form1 = {
@@ -22,7 +22,7 @@ form1 = {
     "Tahun": None,
     "Periode": None,
 }
-st.subheader('Data Garis Kemiskinan di Indonesia')
+st.subheader('Rata-Rata Pengeluaran per Kapita di Indonesia')
 col1, col2 = st.columns(2)
 form1['Jenis'] = col2.selectbox('Pilih Kategori', indo["Jenis"].unique(), key='category_indo', index=None, placeholder='Pilih Kategori')
 form1['Daerah'] = col1.selectbox('Pilih Daerah', indo["Daerah"].unique(), key='daerah_indo', index=None, placeholder='Pilih Daerah')
